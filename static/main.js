@@ -1,4 +1,4 @@
-var socket_dr = new WebSocket('ws://127.0.0.1:8000/ws/datos_recibidos/');
+var socket_dr = new WebSocket('ws://18.221.158.203:8000/ws/datos_recibidos/');
 
 socket_dr.addEventListener('message', function (event) {
     console.log('datos recibidos from server ', event.data);
@@ -37,7 +37,7 @@ socket_dr.addEventListener('message', function (event) {
 
 });
 
-var socket_i_cel = new WebSocket('ws://127.0.0.1:8000/ws/iniciar_celda/');
+var socket_i_cel = new WebSocket('ws://18.221.158.203:8000/ws/iniciar_celda/');
 
 function enviarNuevoMensaje_i_cel() {
              // Envia al WebSocket un nuevo mensaje
@@ -57,7 +57,7 @@ socket_i_cel.addEventListener('message', function (event) {
 });
 
 
-var socket_d_cel = new WebSocket('ws://127.0.0.1:8000/ws/detener_celda/');
+var socket_d_cel = new WebSocket('ws://18.221.158.203:8000/ws/detener_celda/');
 
 function enviarNuevoMensaje_d_cel() {
              // Envia al WebSocket un nuevo mensaje
@@ -78,7 +78,7 @@ socket_d_cel.addEventListener('message', function (event) {
 });
 
 
-var socket_a_col = new WebSocket('ws://127.0.0.1:8000/ws/activar_colocacion/');
+var socket_a_col = new WebSocket('ws://18.221.158.203:8000/ws/activar_colocacion/');
 function enviarNuevoMensaje_a_col() {
              // Envia al WebSocket un nuevo mensaje
              socket_a_col.send(JSON.stringify({
@@ -98,7 +98,7 @@ socket_a_col.addEventListener('message', function (event) {
 });
 
 
-var socket_d_col = new WebSocket('ws://127.0.0.1:8000/ws/detener_colocacion/');
+var socket_d_col = new WebSocket('ws://18.221.158.203:8000/ws/detener_colocacion/');
 
 function enviarNuevoMensaje_d_col() {
              // Envia al WebSocket un nuevo mensaje
@@ -122,7 +122,7 @@ socket_d_col.addEventListener('message', function (event) {
     /*<script src="{% static 'main.js' %}"></script>*/
 
 
-var socket_a_t = new WebSocket('ws://127.0.0.1:8000/ws/activar_taladrado/');
+var socket_a_t = new WebSocket('ws://18.221.158.203:8000/ws/activar_taladrado/');
 
 function enviarNuevoMensaje_a_t() {
              // Envia al WebSocket un nuevo mensaje
@@ -144,7 +144,7 @@ socket_a_t.addEventListener('message', function (event) {
 
 
 
-var socket_d_t = new WebSocket('ws://127.0.0.1:8000/ws/desactivar_taladrado/');
+var socket_d_t = new WebSocket('ws://18.221.158.203:8000/ws/desactivar_taladrado/');
 
 
 function enviarNuevoMensaje_d_t() {
@@ -166,7 +166,7 @@ socket_d_t.addEventListener('message', function (event) {
 });
 
 
-var socket_r_c = new WebSocket('ws://127.0.0.1:8000/ws/reiniciar_celda/');
+var socket_r_c = new WebSocket('ws://18.221.158.203:8000/ws/reiniciar_celda/');
 function enviarNuevoMensaje_r_c() {
              // Envia al WebSocket un nuevo mensaje
              socket_r_c.send(JSON.stringify({
