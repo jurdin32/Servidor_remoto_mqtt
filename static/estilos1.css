@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contenido{
+    margin: 3px;
+}
+.caja{
+    display: table-cell;
+    padding: 10px;
+}
+
+.caja:nth-child(1) h1{
+    background: #069;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+.caja:nth-child(2) h1{
+    background: #059;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.caja:nth-child(3) h1{
+    background: #059;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+
+.caja:nth-child(1) p{
+    background: #010;
+    color:white;
+}
+
+
+.caja:nth-child(2) p{
+    background: #080;
+    color:white;
+    text-align: center;
+}
+
+
+/* Botones de inicio de programa */
+
+.botones_pi{
+    display: table-cell;
+    padding-left: 40px;
+    height: 65px;
+
+
+}
+
+.botones_col{
+    display: table-cell;
+    padding-left: 70px;
+    height: 65px;
+
+}
+
+.botones_tal{
+    display: table-cell;
+    padding-left: 70px;
+    height: 65px;
+
+}
+
+
+
+.start_pi{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#32cd32;
+    border-radius: 6px;
+    border: 2px solid #000;
+  }
+  .start_pi:hover{
+    color: #ffff;
+    background-color: #7FFF00;
+  }
+
+
+  .stop_pi{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#EC2300;
+    border-radius: 6px;
+    border: 2px solid #000;
+  }
+  .stop_pi:hover{
+    color: #ffff;
+    background-color: #FF0000;
+  }
+
+
+  .restart_pi{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#FF4D00;
+    border-radius: 6px;
+    border: 2px solid #000;
+  }
+  .restart_pi:hover{
+    color: #ffff;
+    background-color: #fc6423cb;
+  }
+
